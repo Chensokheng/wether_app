@@ -1,4 +1,3 @@
-console.log("It is working on port 3000. That is awesome");
 
 // fetch is brower web API
 
