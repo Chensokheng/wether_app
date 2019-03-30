@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    padding:0;
+    margin:0; 
+} 
+body{
+    font-family: 'Roboto', sans-serif;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+/*navigation*/
+nav {
+    background: #0D98DC;
+    padding:10px 0px;
+    text-align: center;
+}
+nav a{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding:0px 10px;
+    transition: 0.5s;
+}
+.logo{
+    color:yellow;
+}
+nav a:hover{
+    color:#fff;
+}
+/* end of navigation */
+
+/* start the main */
+main{
+   
+    padding:100px 0px;
+    width: 100%;
+    text-align: center;
+    margin:  0 auto;
+    flex-grow: 1;
+   
+}
+main p{
+    font-size: 20px;
+}
+main h1{
+    color:blue;
+}
+main form{
+    margin-top: 40px;
+    text-align: center;
+}
+main form input{
+    border:none;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #8B7575;
+    padding:10px;
+    margin:10px;
+}
+main form button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #00D1B2;
+    color:#fff;
+    border: none;
+}
+.form-content{
+    text-align: start;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+
+/* end of the main */
+
+/* loading */
+.loading{
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top:5px solid #3498db;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    -webkit-animation: spin 2s linear infinite; 
+  animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* end of loading */
+footer{
+
+
+    background: black;
+    width: 100%;
+    padding:10px 0px;
+    color:#fff;
+    text-align: center;
+
+}
+@media(max-width:900px){
+    .form-content{
+        width: 90%;   
+        text-align: start;
+        margin: 0 auto;
+    }
+    .form-content p{
+        padding:0;
+    }
+}
