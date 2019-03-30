@@ -11,7 +11,8 @@ weatherForm.addEventListener("submit", (e) => {
     e.preventDefault();
     loader.classList.add('loading');
     const location = searchInput.value;
-    fetch(`http://localhost:3000/weather?address=${location}`).then(response => {
+    // use the localhost when we want to show in sid the localhost
+    fetch(`/weather?address=${location}`).then(response => {
         response.json().then(data => {
             if (data.error) {
                 msg_1.innerHTML = data.error;

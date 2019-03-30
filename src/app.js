@@ -4,7 +4,7 @@ const app = express();
 const hbs = require('hbs');
 const geocode = require('./utils/geocode.js');
 const forecast = require("./utils/forecast.js")
-
+const port = process.env.PORT || 3000;
 
 // define path for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -110,6 +110,8 @@ app.get("*", (req, res) => {
         name: 'sokheng'
     })
 })
-app.listen(3000, () => {
-    console.log("Server is now running on port 3000");
+
+// chang the port when push to heroku
+app.listen(port, () => {
+    console.log(`Server is now running on port ${port}`);
 })
