@@ -47,6 +47,11 @@ app.get("/help", (req, res) => {
     });
 })
 
+// contact route
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
 
 
 app.get("/weather", (req, res) => {
