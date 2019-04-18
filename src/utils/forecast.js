@@ -11,6 +11,7 @@ const forecast = (latitude, longtitude, callback) => {
         } else {
             let temperature = Math.floor((response.body.currently.temperature - 32) * 5 / 9);
             callback(undefined, `.It's currently ${temperature} degree. There is a ${response.body.currently.precipProbability} chance of rain`);
+
         }
     });
 
